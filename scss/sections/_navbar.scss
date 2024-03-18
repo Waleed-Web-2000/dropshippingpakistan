@@ -1,0 +1,26 @@
+
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu {
+	background-image: url("images/ljbg.jpg");
+	@include media-breakpoint-down(sm) {
+		text-align: center;
+	}
+	li {
+		padding: 0 0.5rem;
+		a {
+			color: $white !important;
+			text-transform: capitalize;
+			font-weight: 600;
+		}	
+	}
+}
+.logoo {
+	font-size: 1.5rem;
+	font-weight: 600;
+	
+}
+.logooo {
+	animation: anim 1s linear infinite;
+}
